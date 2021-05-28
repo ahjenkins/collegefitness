@@ -1,0 +1,385 @@
+/* COLOR THEME
+dark green: #026670
+light green: #9fedd7
+light yellow: #fef9c7
+dark yellow: #fce181
+grey: #edeae5
+*/
+
+/* FOR MOBILE PHONES */
+body {
+    background-color: #edeae5;
+    font-family: Helvetica, sans-serif;
+}
+
+.header-image {
+    width: 100%;
+}
+#header-image-desktop {
+    display: none;
+}
+
+.clear {clear: both;}
+
+/* navigation bar */
+nav {
+    background-color: #026670;
+    padding: 15px 10px;
+}
+nav a {
+    color: #edeae5;
+    font-size: 1.15em;
+    margin: 10px 15px;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+}
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+header h1 {
+    margin-top: 40px;
+}
+.subheadings{
+    margin-top: 60px;
+}
+hr {
+    margin-right: 10%;
+}
+
+footer {
+    background-color: #026670;
+    color: #edeae5;
+    font-size: 0.9em;
+    margin-top: 80px;
+    padding: 12px 0px;
+}
+footer p {
+    margin-left: 20px;
+    display: inline;
+}
+footer a {
+    margin-right: 20px;
+    float: right;
+    color: #edeae5;
+}
+
+
+/* grouped selectors (all pages)*/
+header, p, .spotify-playlists, .stretch-lists {
+    margin-left: 8%;
+}
+.schedule {
+    width: 100%;
+}
+
+/* home page */
+/* determine your fitness level */
+.home-p, .steps-goals h3, .beginner-p, .intermediate-p, .terminology-dict, .advanced-p {
+    margin: 4% 10% 0% 8%;
+} /* grouped selector (multiple pages) */
+.level-img {
+    display: none;
+}
+#level-thumbnails {display: none;}
+
+/* setting your fitness goals */
+.goals-img {
+    display: none;
+}
+
+.steps-goals h3 {
+    text-align: center;
+}
+.steps-goals ol {list-style-position: inside;}
+.steps-goals li {
+    padding: 5px 0 25px 0;
+    margin: 0% 12% 0% 5%;
+}
+
+/* playlists */
+.playlists-img {display: none;}
+
+.spotify-playlists {
+    margin: 30px 10% 0 8%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.spotify-playlists div {
+    flex: 1;
+}
+
+
+/* beginner page */
+/* where to begin */
+.stretching-img {display: none;}
+.stretch-lists {
+    list-style-position: inside;
+}
+.stretch-lists li {
+    margin-bottom: 5px;
+}
+/* exercises */
+.exercises {
+    margin: 30px 10% 0% 8%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.exercises th, .exercises td {
+    padding: 5px;
+    border-right: 1px solid black;
+    text-align: center;
+}
+/* routine */
+.schedule {
+    display: none;
+}
+.routine {
+    margin: 30px 10% 30px 8%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.routine th, .routine td {
+    padding: 5px;
+    border-right: 1px solid black;
+    text-align: center;
+}
+
+
+/* intermediate page */
+/* exercises */
+.exercise-img {display: none;}
+.exercise-list {
+    list-style-position: inside;
+    margin: 0px 10% 0px 8%;
+}
+.terminology-img {display: none;}
+.terminology-dict dd {
+    margin-bottom: 10px;
+}
+
+
+/* advanced page */
+/* exercises */
+/* routine */
+#advanced-routine {
+    margin: 0px 10% 0px 8%;
+    border: 1px solid black;
+}
+.evenrow {
+    background-color: #C0C0C0;
+    
+    
+}
+/* contact */
+.contact-img {display: none;}
+#contact-form {
+    margin: 30px 10% 0px 8%;
+}
+#contact-form label, #contact-form input {
+    padding-top: 10px;
+}
+#message {
+    resize: none;
+    width: 100%;
+    /* change cols of message box */
+}
+
+
+/* motivation page */
+/* quotes */
+.quotes, .affirmations, .affirmation-images {
+    margin: 30px 10% 0 8%;
+} /* grouped selector */
+.quotes li {
+    margin-top: 20px;
+    list-style-position: inside;
+}
+.motivation-img {
+    display: none;
+}
+/* affirmations */
+.affirmation-img {
+    width: 50%;
+    margin-top: 20px;
+    float: left;
+}
+
+
+/* FOR TABLETS */
+@media only screen and (min-width: 768px) {
+    /* home page */
+    .header-image {
+        display: none;
+    }
+    #header-image-desktop {
+        width: 100%;
+        margin-bottom: 5px;
+        display: block;
+    }
+    
+    /* determine your fitness level */
+    .level-img {
+        display: block;
+        float: right;
+        height: 100px;
+        margin: 0 10% 30px 0;
+    }
+    .fitness-level p {
+        margin: 30px 30% 0 8%;
+    }
+
+    /* playlists */
+    .spotify-playlists {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* beginner page */
+    
+
+
+    /* advanced page */
+    /* contact */
+    
+    #contact-form label, #contact-form input, #message {
+        padding: 5px 0 ;
+    }
+    #message {
+        width: 50%;
+        /* change cols of message box */
+    }
+
+
+
+/* FOR LAPTOPS AND DESKTOPS */
+@media only screen and (min-width: 992px) {
+    nav a {
+        display: inline;
+    }
+    hr {
+        margin-right: 50%;
+    }
+
+    /* home page */
+    /* determine your fitness level */
+    .home-p, .steps-goals h3, .beginner-p, .intermediate-p, .terminology-dict, .advanced-p {
+        margin: 30px 10% 0% 8%;
+    }
+    .level-img {
+        height: 250px;
+        margin-right: 8%;
+    }
+    .fitness-level p {
+        margin: 30px 48% 0 8%;
+    }
+    #intermediate-img, #intermediate-info, #advanced-img, #advanced-info {display: none;}
+    #beginner-info, #intermediate-info, #advanced-info {
+        padding-top: 70px;
+    }
+    #level-thumbnails {
+        display: block;
+        width: 309px;
+        margin: auto;
+    }
+    #level-thumbnails img {
+        width: 100px;
+        
+    }
+    
+    /* setting your fitness goals */
+    .goals-img {
+        display: block;
+        float: left;
+        margin: 30px 12% 0px 8%;
+        height: 350px;
+    }
+    .steps-goals {
+        margin: 50px 8% 0px 8%;
+    }
+    .steps-goals li {
+        padding: 10px 0 50px 0;
+        margin: 0;
+    }
+
+    /* playlists */
+    .playlists .home-p {
+        padding-right: 35%;
+    }
+    .playlists-img {
+        width: 35%;
+        margin-right: 8%;
+        display: block;
+        float: right;
+    }
+    .spotify-link:hover {
+        height: 380px;
+    }
+
+
+    /* beginner page */
+    /* routine */
+    .schedule {
+        margin: 30px 10% 0px 8%;
+        width: 81%;
+        display: block;
+    }
+    .routine {
+        display: none;
+    }
+
+
+    /* intermediate page */
+    .i-exercises {
+        margin: 30px 10% 0px 8%;
+        display: flex;
+        flex-direction: row;
+    }
+    #i-exercises-body {
+        margin: auto;
+        flex: 1;
+    }
+    #i-exercises-ppl {
+        margin: auto;
+        flex: 2;
+    }
+
+
+    /* motivation page */
+    #motivation hr {
+        margin-right: 10%;
+    }
+    /* quotes */
+    .motivation-img {
+        width: 100%;
+        margin-top: 30px;
+        display: block;
+    }
+    /* affirmations */
+    .affirmations {
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .affirmations .first-half {
+        flex: 1;
+        list-style-position: inside;
+    }
+    
+    .affirmations .second-half {
+        flex: 1;
+        list-style-position: inside;
+    }
+    .affirmations li {
+        margin-bottom: 20px;
+    }
+    
+}
